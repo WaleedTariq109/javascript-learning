@@ -53,3 +53,18 @@ const foods = new Object({
 
 console.log(waleed);
 console.log(foods);
+
+// Retrive Value from Objects
+
+// Retrive value with dot notation
+console.log(waleed.firstName);
+
+// Retrive value with bracket notation
+console.log(waleed['firstName']);
+
+// With bracket notation we can also retrive value with some expression
+
+const key = 'Name';
+
+console.log(waleed['first' + key]);
+console.log(waleed['last' + key]);
