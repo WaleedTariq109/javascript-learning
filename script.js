@@ -29,3 +29,27 @@ function calcAge(birthYear) {
   return 2022 - birthYear;
 }
 
+////////////////////////////////////////////////
+
+// Objects
+
+// We define Objects with key value pairs
+
+// Method #1
+// Literal Syntax
+const waleed = {
+  firstName: 'Waleed',
+  lastName: 'Tariq',
+  birthYear: 2001,
+  job: 'Web Developer',
+};
+
+// Method #2
+// Constructor Function
+const foods = new Object({
+  food1: 'Siri Payee',
+  food2: 'Butter Chicken',
+});
+
+console.log(waleed);
+console.log(foods);
