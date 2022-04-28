@@ -95,5 +95,24 @@ const c = arr[2];
 // Retriving Element with Array Destructuring
 const [x, y, z] = arr;
 
-console.log(a, b, c);
-console.log(x, y, z);
+// console.log(a, b, c);
+// console.log(x, y, z);
+
+// Shifting variable value
+let first = 10;
+let second = 20;
+
+// Not Work
+
+// first = second;
+// second = first;
+
+// Old Way
+
+// let temp = first;
+// first = second;
+// second = temp;
+
+[first, second] = [second, first];
+
+console.log(first, second);
