@@ -26,4 +26,22 @@ const restaurant = {
       close: 24,
     },
   },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
 };
+
+// Array Destructuring
+
+const arr = [1, 2, 3, 4];
+
+const [a, b, c, d] = arr;
+console.log(a, b, c, d);
+
+const [main, , secondary] = restaurant.categories;
+console.log(main, secondary);
+
+const [starterItem, mainItem] = restaurant.order(1, 2);
+
+console.log(starterItem, mainItem);
