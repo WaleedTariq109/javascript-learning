@@ -52,3 +52,11 @@ const nested = [1, 2, [3, 4]];
 const [x, , [y, z]] = nested;
 
 console.log(x, y, z);
+
+// Spread Operator
+
+const copyMenu = [...restaurant.mainMenu]; // Shallow Copy of an Array
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu]; // Merge two Arrays
+
+console.log(copyMenu);
+console.log(menu);
