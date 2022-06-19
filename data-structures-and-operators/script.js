@@ -45,3 +45,10 @@ console.log(main, secondary);
 const [starterItem, mainItem] = restaurant.order(1, 2);
 
 console.log(starterItem, mainItem);
+
+// Destructuring Nested Array
+
+const nested = [1, 2, [3, 4]];
+const [x, , [y, z]] = nested;
+
+console.log(x, y, z);
