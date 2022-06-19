@@ -36,8 +36,8 @@ const restaurant = {
 
 const arr = [1, 2, 3, 4];
 
-const [a, b, c, d] = arr;
-console.log(a, b, c, d);
+// const [a, b, c, d] = arr;
+// console.log(a, b, c, d);
 
 const [main, , secondary] = restaurant.categories;
 console.log(main, secondary);
@@ -60,3 +60,9 @@ const menu = [...restaurant.mainMenu, ...restaurant.starterMenu]; // Merge two A
 
 console.log(copyMenu);
 console.log(menu);
+
+// Rest Pattern and Parameter
+
+// Rest
+const [a, b, ...others] = [1, 2, 3, 4, 5, 6];
+console.log(a, b, others);
