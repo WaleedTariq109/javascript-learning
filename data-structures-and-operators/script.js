@@ -82,27 +82,36 @@ const restaurant = {
 // Short Circuiting
 // numGuest dosen't exist in resturant object
 // Without short circuiting
-console.log('---- OR ----');
+// console.log('---- OR ----');
 
-restaurant.numGuest = 2;
-const guest1 = restaurant.numGuest ? restaurant.numGuest : 10;
-console.log(guest1);
+// restaurant.numGuest = 2;
+// const guest1 = restaurant.numGuest ? restaurant.numGuest : 10;
+// console.log(guest1);
 
 // With short circuiting
-const guest2 = restaurant.numGuest || 20;
-console.log(guest2);
+// const guest2 = restaurant.numGuest || 20;
+// console.log(guest2);
 
-console.log('---- AND ----');
+// console.log('---- AND ----');
 
-console.log(0 && 10);
-console.log('' && 'Waleed');
-console.log(10 && 'waleed');
-console.log('Waleed' && 10 && null && 'hello');
+// console.log(0 && 10);
+// console.log('' && 'Waleed');
+// console.log(10 && 'waleed');
+// console.log('Waleed' && 10 && null && 'hello');
 
 // Without short circuiting
-if (restaurant.order) {
-  console.log(restaurant.order(2, 1));
-}
+// if (restaurant.order) {
+// console.log(restaurant.order(2, 1));
+// }
 
 // With short circuiting
-console.log(restaurant.order && restaurant.order(2, 1));
+// console.log(restaurant.order && restaurant.order(2, 1));
+
+// Nullish Coalescing Operator
+
+restaurant.numGuest = 0;
+const guest = restaurant.numGuest || 20;
+console.log(guest);
+
+const guest2 = restaurant.numGuest ?? 20;
+console.log(guest2);
