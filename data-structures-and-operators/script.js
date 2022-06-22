@@ -109,9 +109,31 @@ const restaurant = {
 
 // Nullish Coalescing Operator
 
-restaurant.numGuest = 0;
-const guest = restaurant.numGuest || 20;
-console.log(guest);
+// restaurant.numGuest = 0;
+// const guest = restaurant.numGuest || 20;
+// console.log(guest);
 
-const guest2 = restaurant.numGuest ?? 20;
-console.log(guest2);
+// const guest2 = restaurant.numGuest ?? 20;
+// console.log(guest2);
+
+// The For of Loop
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+// Normal For loop
+// for (let i = 0; i < menu.length; i++) {
+//   console.log(menu[i]);
+// }
+
+// For of Loop
+// console.log('------');
+// for (const item of menu) {
+//   console.log(item);
+// }
+
+// Get Element index with for of loop
+
+for (const [index, item] of menu.entries()) {
+  console.log(index);
+  console.log(`${index + 1}: ${item}`);
+}
