@@ -131,12 +131,12 @@ const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 //   console.log(item);
 // }
 
-// Get Element index with for of loop
+// Get Element index with for of loop (GIGSOON) june 24 2022 - 3:50AM
 
-for (const [index, item] of menu.entries()) {
-  console.log(index);
-  console.log(`${index + 1}: ${item}`);
-}
+// for (const [index, item] of menu.entries()) {
+//   console.log(index);
+//   console.log(`${index + 1}: ${item}`);
+// }
 
 // Enhance Object Literals
 
@@ -157,3 +157,40 @@ for (const [index, item] of menu.entries()) {
 // };
 
 // console.log(openingHours);
+
+// Looping Objects
+
+const openingHours = {
+  thu: {
+    open: 12,
+    close: 22,
+  },
+  fri: {
+    open: 11,
+    close: 23,
+  },
+  sat: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
+
+// Object.keys() return key inside the object
+for (const day of Object.keys(openingHours)) {
+  console.log(day);
+}
+
+// Object.values() return value inside the object
+for (const day of Object.values(openingHours)) {
+  console.log(day);
+}
+
+// Object.entries() return value and keys of object
+for (const [key, day] of Object.entries(openingHours)) {
+  console.log(key, day);
+}
+
+// Using Object Destructuring
+for (const [key, { open, close }] of Object.entries(openingHours)) {
+  console.log(`On ${key} we open at ${open} and close at ${close}`);
+}
