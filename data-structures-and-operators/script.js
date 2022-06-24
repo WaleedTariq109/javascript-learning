@@ -176,21 +176,56 @@ const openingHours = {
 };
 
 // Object.keys() return key inside the object
-for (const day of Object.keys(openingHours)) {
-  console.log(day);
-}
+// for (const day of Object.keys(openingHours)) {
+//   console.log(day);
+// }
 
 // Object.values() return value inside the object
-for (const day of Object.values(openingHours)) {
-  console.log(day);
-}
+// for (const day of Object.values(openingHours)) {
+//   console.log(day);
+// }
 
 // Object.entries() return value and keys of object
-for (const [key, day] of Object.entries(openingHours)) {
-  console.log(key, day);
-}
+// for (const [key, day] of Object.entries(openingHours)) {
+//   console.log(key, day);
+// }
 
 // Using Object Destructuring
-for (const [key, { open, close }] of Object.entries(openingHours)) {
-  console.log(`On ${key} we open at ${open} and close at ${close}`);
-}
+// for (const [key, { open, close }] of Object.entries(openingHours)) {
+//   console.log(`On ${key} we open at ${open} and close at ${close}`);
+// }
+
+// Sets
+
+const orderSet = new Set([
+  'Pizza',
+  'Pizza',
+  'Pasta',
+  'Coffee',
+  'Shake',
+  'Pasta',
+]);
+
+console.log(orderSet.size);
+console.log(orderSet.has('Pizza'));
+console.log(orderSet.add('Rice'));
+console.log(orderSet.delete('Pizza'));
+// orderSet.clear();
+console.log(orderSet);
+// Looping over Sets
+
+for (const item of orderSet) console.log(item);
+
+// Example
+const staff = [
+  'Manager',
+  'Chef',
+  'Janitor',
+  'Waiter',
+  'Janitor',
+  'Chef',
+  'Waiter',
+];
+
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
