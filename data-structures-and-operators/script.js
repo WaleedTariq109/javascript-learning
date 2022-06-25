@@ -232,13 +232,13 @@ const openingHours = {
 
 // Maps
 
-const restaurant1 = new Map();
+// const restaurant1 = new Map();
 
-restaurant1.set('name', 'Al-kaif');
-restaurant1
-  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
-  .set('open', 11)
-  .set('close', '20');
+// restaurant1.set('name', 'Al-kaif');
+// restaurant1
+//   .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+//   .set('open', 11)
+//   .set('close', '20');
 
 // console.log(restaurant1);
 
@@ -253,23 +253,23 @@ restaurant1
 
 // Map Iteration
 
-const question = new Map([
-  ['question', 'What is the best programming language'],
-  [1, 'C++'],
-  [2, 'Java'],
-  [3, 'JavaScript'],
-  ['correct', 3],
-  [true, 'Right Answer'],
-  [false, 'Wrong Answer'],
-]);
+// const question = new Map([
+//   ['question', 'What is the best programming language'],
+//   [1, 'C++'],
+//   [2, 'Java'],
+//   [3, 'JavaScript'],
+//   ['correct', 3],
+//   [true, 'Right Answer'],
+//   [false, 'Wrong Answer'],
+// ]);
 
-console.log(question.get('question'));
-for (const [key, value] of question) {
-  if (typeof key === 'number') {
-    console.log(`Answer ${key}: ${value}`);
-  }
+// console.log(question.get('question'));
+// for (const [key, value] of question) {
+//   if (typeof key === 'number') {
+//     console.log(`Answer ${key}: ${value}`);
+//   }
 }
 
 // const answer = Number(prompt('Your Answer'));
-const answer = 3;
-console.log(question.get(question.get('correct') === answer));
+// const answer = 3;
+// console.log(question.get(question.get('correct') === answer));
