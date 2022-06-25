@@ -197,35 +197,56 @@ const openingHours = {
 
 // Sets
 
-const orderSet = new Set([
-  'Pizza',
-  'Pizza',
-  'Pasta',
-  'Coffee',
-  'Shake',
-  'Pasta',
-]);
+// const orderSet = new Set([
+//   'Pizza',
+//   'Pizza',
+//   'Pasta',
+//   'Coffee',
+//   'Shake',
+//   'Pasta',
+// ]);
 
-console.log(orderSet.size);
-console.log(orderSet.has('Pizza'));
-console.log(orderSet.add('Rice'));
-console.log(orderSet.delete('Pizza'));
+// console.log(orderSet.size);
+// console.log(orderSet.has('Pizza'));
+// console.log(orderSet.add('Rice'));
+// console.log(orderSet.delete('Pizza'));
 // orderSet.clear();
-console.log(orderSet);
+// console.log(orderSet);
 // Looping over Sets
 
-for (const item of orderSet) console.log(item);
+// for (const item of orderSet) console.log(item);
 
 // Example
-const staff = [
-  'Manager',
-  'Chef',
-  'Janitor',
-  'Waiter',
-  'Janitor',
-  'Chef',
-  'Waiter',
-];
+// const staff = [
+//   'Manager',
+//   'Chef',
+//   'Janitor',
+//   'Waiter',
+//   'Janitor',
+//   'Chef',
+//   'Waiter',
+// ];
 
-const staffUnique = [...new Set(staff)];
-console.log(staffUnique);
+// const staffUnique = [...new Set(staff)];
+// console.log(staffUnique);
+
+// Maps
+
+const restaurant1 = new Map();
+
+restaurant1.set('name', 'Al-kaif');
+restaurant1
+  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+  .set('open', 11)
+  .set('close', '20');
+
+console.log(restaurant1);
+
+// Getting values from Map
+
+console.log(restaurant1.get('name'));
+console.log(restaurant1.get('open'));
+console.log(restaurant1.has('open'));
+console.log(restaurant1.delete('open'));
+console.log(restaurant1.size);
+restaurant1.clear();
