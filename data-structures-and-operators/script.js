@@ -240,13 +240,36 @@ restaurant1
   .set('open', 11)
   .set('close', '20');
 
-console.log(restaurant1);
+// console.log(restaurant1);
 
 // Getting values from Map
 
-console.log(restaurant1.get('name'));
-console.log(restaurant1.get('open'));
-console.log(restaurant1.has('open'));
-console.log(restaurant1.delete('open'));
-console.log(restaurant1.size);
-restaurant1.clear();
+// console.log(restaurant1.get('name'));
+// console.log(restaurant1.get('open'));
+// console.log(restaurant1.has('open'));
+// console.log(restaurant1.delete('open'));
+// console.log(restaurant1.size);
+// restaurant1.clear();
+
+// Map Iteration
+
+const question = new Map([
+  ['question', 'What is the best programming language'],
+  [1, 'C++'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  ['correct', 3],
+  [true, 'Right Answer'],
+  [false, 'Wrong Answer'],
+]);
+
+console.log(question.get('question'));
+for (const [key, value] of question) {
+  if (typeof key === 'number') {
+    console.log(`Answer ${key}: ${value}`);
+  }
+}
+
+// const answer = Number(prompt('Your Answer'));
+const answer = 3;
+console.log(question.get(question.get('correct') === answer));
