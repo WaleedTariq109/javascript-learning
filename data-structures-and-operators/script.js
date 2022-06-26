@@ -276,17 +276,36 @@ const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 
 // Working with strings
 
-const airline = 'Fly Emirates'; // length starts from 1 and index start from 0
-const plane = 'A380';
-console.log(airline.indexOf('y'));
-console.log(airline.lastIndexOf('e'));
-console.log(airline.indexOf('m'));
+// const airline = 'Fly Emirates'; // length starts from 1 and index start from 0
+// const plane = 'A380';
+// console.log(airline.indexOf('y'));
+// console.log(airline.lastIndexOf('e'));
+// console.log(airline.indexOf('m'));
 
-console.log(airline.slice(4));
-console.log(airline.slice(4, 9));
+// console.log(airline.slice(4));
+// console.log(airline.slice(4, 9));
 
-console.log(airline.slice(0, airline.indexOf(' ')));
-console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+// console.log(airline.slice(0, airline.indexOf(' ')));
+// console.log(airline.slice(airline.lastIndexOf(' ') + 1));
 
-const airline_name = new String('Fly Emirates');
-console.log(typeof airline_name);
+// const airline_name = new String('Fly Emirates');
+// console.log(typeof airline_name);
+
+const airline = 'Fly Emirates';
+// console.log(airline.toLowerCase());
+// console.log(airline.toUpperCase());
+
+// Fun Example
+
+const personName = 'wAlEeD'; // Waleed
+console.log(personName);
+// Lower Case all the string
+const nameLowerCase = personName.toLowerCase(); // waleed
+console.log(nameLowerCase);
+
+const correctName = personName[0].toUpperCase() + nameLowerCase.slice(1);
+console.log(correctName);
+
+// Compairing Email
+
+const email = 'hello@test.com';
