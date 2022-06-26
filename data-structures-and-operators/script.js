@@ -268,7 +268,7 @@ const openingHours = {
 //   if (typeof key === 'number') {
 //     console.log(`Answer ${key}: ${value}`);
 //   }
-}
+// }
 
 // const answer = Number(prompt('Your Answer'));
 // const answer = 3;
