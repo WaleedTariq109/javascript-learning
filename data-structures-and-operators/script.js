@@ -308,4 +308,8 @@ console.log(correctName);
 
 // Compairing Email
 
-const email = 'hello@test.com';
+const email = 'hElLo@TEst.com';
+
+const emailCorrect = email.toLowerCase().trim();
+
+console.log(emailCorrect);
