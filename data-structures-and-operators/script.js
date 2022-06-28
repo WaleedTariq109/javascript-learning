@@ -313,3 +313,13 @@ const airline = 'Fly Emirates';
 // const emailCorrect = email.toLowerCase().trim();
 
 // console.log(emailCorrect);
+
+// Split and join method
+
+console.log('a+very+nice+string'.split('+'));
+
+const [firstName, lastName] = 'Waleed Tariq'.split(' ');
+
+const newName = ['Mr,', firstName, lastName].join(' ');
+
+console.log(newName);
