@@ -297,14 +297,14 @@ const airline = 'Fly Emirates';
 
 // Fun Example
 
-const personName = 'wAlEeD'; // Waleed
-console.log(personName);
+// const personName = 'wAlEeD'; // Waleed
+// console.log(personName);
 // Lower Case all the string
-const nameLowerCase = personName.toLowerCase(); // waleed
-console.log(nameLowerCase);
+// const nameLowerCase = personName.toLowerCase(); // waleed
+// console.log(nameLowerCase);
 
-const correctName = personName[0].toUpperCase() + nameLowerCase.slice(1);
-console.log(correctName);
+// const correctName = personName[0].toUpperCase() + nameLowerCase.slice(1);
+// console.log(correctName);
 
 // Compairing Email
 
