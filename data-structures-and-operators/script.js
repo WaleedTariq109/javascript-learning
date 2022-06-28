@@ -316,10 +316,21 @@ const airline = 'Fly Emirates';
 
 // Split and join method
 
-console.log('a+very+nice+string'.split('+'));
+// console.log('a+very+nice+string'.split('+'));
 
-const [firstName, lastName] = 'Waleed Tariq'.split(' ');
+// const [firstName, lastName] = 'Waleed Tariq'.split(' ');
 
-const newName = ['Mr,', firstName, lastName].join(' ');
+// const newName = ['Mr,', firstName, lastName].join(' ');
 
-console.log(newName);
+// console.log(newName);
+
+function captilizeName(name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+  for (const n of names) {
+    namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(namesUpper.join(' '));
+}
+
+captilizeName('waleed tariq khan');
