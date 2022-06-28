@@ -324,13 +324,29 @@ const airline = 'Fly Emirates';
 
 // console.log(newName);
 
-function captilizeName(name) {
-  const names = name.split(' ');
-  const namesUpper = [];
-  for (const n of names) {
-    namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
-  }
-  console.log(namesUpper.join(' '));
+// function captilizeName(name) {
+//   const names = name.split(' ');
+//   const namesUpper = [];
+//   for (const n of names) {
+//     namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+//   }
+//   console.log(namesUpper.join(' '));
+// }
+
+// captilizeName('waleed tariq khan');
+
+// Padding
+
+const personName = 'Waleed';
+const length = personName.length;
+console.log(personName.padStart(length + 3, 'Mr '));
+
+// Mask Cerdit Card Number
+
+function maskCreditCard(number) {
+  const str = String(number);
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
 }
 
-captilizeName('waleed tariq khan');
+console.log(maskCreditCard(99338726648899));
