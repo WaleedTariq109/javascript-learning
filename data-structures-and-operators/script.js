@@ -337,16 +337,16 @@ const airline = 'Fly Emirates';
 
 // Padding
 
-const personName = 'Waleed';
-const length = personName.length;
-console.log(personName.padStart(length + 3, 'Mr '));
+// const personName = 'Waleed';
+// const length = personName.length;
+// console.log(personName.padStart(length + 3, 'Mr '));
 
 // Mask Cerdit Card Number
 
-function maskCreditCard(number) {
-  const str = String(number);
-  const last = str.slice(-4);
-  return last.padStart(str.length, '*');
-}
+// function maskCreditCard(number) {
+//   const str = String(number);
+//   const last = str.slice(-4);
+//   return last.padStart(str.length, '*');
+// }
 
-console.log(maskCreditCard(99338726648899));
+// console.log(maskCreditCard(99338726648899));
