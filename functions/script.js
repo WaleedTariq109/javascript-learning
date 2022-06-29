@@ -42,7 +42,9 @@ const checkIn = (flight, person) => {
   }
 };
 
-checkIn(flight, passenger);
+// checkIn(flight, passenger);
 
-console.log(flight);
-console.log(passenger);
+// console.log(flight);
+// console.log(passenger);
+
+// First Class Higher Order Function
