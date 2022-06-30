@@ -82,7 +82,38 @@ const transformed = (str, fn) => {
 
 const greet = greeting => name => console.log(`${greeting} ${name}`);
 
-const greeter = greet('Hey');
-greeter('Waleed');
+// const greeter = greet('Hey');
+// greeter('Waleed');
 
-greet('Hello')('Waleed');
+// greet('Hello')('Waleed');
+
+const lufthansa = {
+  airline: 'lufthansa',
+  iataCode: 'LH',
+  booking: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+    this.booking.push({
+      flight: `${this.iataCode}${flightNum}`,
+      name,
+    });
+  },
+};
+
+const luftwings = {
+  airline: 'luftwings',
+  iataCode: 'LW',
+  booking: [],
+};
+
+const bookFlight = lufthansa.book;
+
+// Call Method
+bookFlight.call(lufthansa, 660, 'Waleed');
+bookFlight.call(luftwings, 320, 'Wills');
+
+// Apply Method
+const flightData = [478, 'John'];
+bookFlight.apply(lufthansa, flightData);
