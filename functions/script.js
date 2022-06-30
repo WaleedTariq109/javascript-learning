@@ -122,7 +122,7 @@ const flightData = [478, 'John'];
 
 const bookLW = bookFlight.bind(luftwings);
 
-bookLW(778, 'Waleed Tariq');
+// bookLW(778, 'Waleed Tariq');
 
 // With Event Listners
 
@@ -143,6 +143,19 @@ const addTax = function (rate) {
   };
 };
 
-const addVat = addTax(0.23);
+// const addVat = addTax(0.23);
+// addVat(200);
 
-addVat(200);
+// IIFE
+
+const runOnce = function () {
+  console.log('This function will never run again! 🤣');
+};
+
+runOnce();
+
+(function () {
+  console.log('This function will never run again! 😎');
+})();
+
+(() => console.log('This function will never run again! 😎. Arrow'))();
