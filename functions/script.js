@@ -111,9 +111,38 @@ const luftwings = {
 const bookFlight = lufthansa.book;
 
 // Call Method
-bookFlight.call(lufthansa, 660, 'Waleed');
-bookFlight.call(luftwings, 320, 'Wills');
+// bookFlight.call(lufthansa, 660, 'Waleed');
+// bookFlight.call(luftwings, 320, 'Wills');
 
 // Apply Method
 const flightData = [478, 'John'];
-bookFlight.apply(lufthansa, flightData);
+// bookFlight.apply(lufthansa, flightData);
+
+// Bind method
+
+const bookLW = bookFlight.bind(luftwings);
+
+bookLW(778, 'Waleed Tariq');
+
+// With Event Listners
+
+lufthansa.planes = 300;
+lufthansa.buyPlane = function () {
+  console.log(this);
+  this.planes++;
+  console.log(this.planes);
+};
+
+document
+  .querySelector('.buy')
+  .addEventListener('click', lufthansa.buyPlane.bind(lufthansa));
+
+const addTax = function (rate) {
+  return function (value) {
+    console.log(value + value * rate);
+  };
+};
+
+const addVat = addTax(0.23);
+
+addVat(200);
