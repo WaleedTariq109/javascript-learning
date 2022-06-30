@@ -64,6 +64,25 @@ const transformed = (str, fn) => {
   console.log(`Transformed by ${fn.name} function`);
 };
 
-transformed('Javascript is the best!', upperFirstWord);
+// transformed('Javascript is the best!', upperFirstWord);
+// transformed('Javascript is the best!', oneWord);
 
-transformed('Javascript is the best!', oneWord);
+// Functions Returns Function
+
+// const greet = function (greeting) {
+//   return function (name) {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
+
+// const greeter = greet('Hey');
+// greeter('Waleed');
+
+// greet('Hello')('Waleed');
+
+const greet = greeting => name => console.log(`${greeting} ${name}`);
+
+const greeter = greet('Hey');
+greeter('Waleed');
+
+greet('Hello')('Waleed');
