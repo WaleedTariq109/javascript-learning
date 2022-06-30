@@ -47,4 +47,23 @@ const checkIn = (flight, person) => {
 // console.log(flight);
 // console.log(passenger);
 
-// First Class Higher Order Function
+// Higher Order Function
+
+const oneWord = str => {
+  return str.replaceAll(' ', '').toLowerCase();
+};
+
+const upperFirstWord = str => {
+  const [firstWord, ...others] = str.split(' ');
+  return [firstWord.toUpperCase(), ...others].join(' ');
+};
+
+// Higher-Order Function
+const transformed = (str, fn) => {
+  console.log(`Transformed String: ${fn(str)}`);
+  console.log(`Transformed by ${fn.name} function`);
+};
+
+transformed('Javascript is the best!', upperFirstWord);
+
+transformed('Javascript is the best!', oneWord);
