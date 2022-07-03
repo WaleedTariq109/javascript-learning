@@ -1,11 +1,6 @@
 'use strict';
 
 // Function with default parameter
-/**
- * arr [
- *  { flightNum: PIA009, totalPassengers: 212, price: 12000 }
- * ]
- */
 
 const bookings = [];
 
@@ -213,4 +208,4 @@ const boardPassengers = function (n, wait) {
   console.log(`Will Start Boarding in ${wait} seconds`);
 };
 
-boardPassengers(300, 5);
+// boardPassengers(300, 5);
