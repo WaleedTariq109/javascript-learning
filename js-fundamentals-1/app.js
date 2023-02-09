@@ -115,3 +115,75 @@ age = 24;
 
 const birthYear = 2001;
 // birthYear = 2002;
+
+// Function Declaration vs Function Expression
+
+// ? Function Declaration
+
+function calcAge(birthYear) {
+  return 2023 - birthYear;
+}
+
+// ? Function Expression
+
+const calcAge1 = function (birthYear) {
+  return 2023 - birthYear;
+};
+
+// ? Arrow Function
+
+const calcAge3 = (birthYear) => {
+  return 2023 - birthYear;
+};
+
+const age1 = calcAge(2001);
+const age2 = calcAge1(2001);
+const age3 = calcAge3(2001);
+
+// console.log(age1, age2, age3);
+
+// ? Arrays
+
+const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+const newList = new Array(1, 2, 3, 4, 5, 6);
+
+// console.log(list, newList);
+
+// console.log(list[0], newList[0]);
+
+// Loops
+
+// for (let i = 0; i < list.length; i++) {
+//   console.log(list[i]);
+// }
+
+// Objects
+
+const personsDetails = {
+  name: "waleed",
+  age: 23,
+  birthYear: 2001,
+  city: "multan",
+  calcPersonAge: () => {
+    console.log(this);
+  },
+};
+
+// Access Object Valuea by dot notation
+
+const name = personsDetails.name;
+const name1 = personsDetails["name"];
+
+// console.log(name, name1);
+
+// personsDetails.calcPersonAge();
+
+// While Loop
+
+let count = 0;
+while (count <= 10) {
+  // console.log(count);
+  count++;
+}
+
+// ? Advance Array Methods
