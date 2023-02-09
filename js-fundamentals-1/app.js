@@ -96,9 +96,22 @@ let nullValue = null;
 let undefinedValue = undefined;
 let bigInt = BigInt(83748378473);
 
-console.log(typeof firstName);
-console.log(typeof number);
-console.log(typeof bool);
-console.log(typeof undefinedValue);
-console.log(typeof nullValue);
-console.log(typeof bigInt);
+// console.log(typeof firstName);
+// console.log(typeof number);
+// console.log(typeof bool);
+// console.log(typeof undefinedValue);
+// console.log(typeof nullValue);
+// console.log(typeof bigInt);
+
+// * Var, Let, Const
+
+// Variable decalared with let can be muated.
+
+let age = 23;
+age = 24;
+
+// variabel decalre with const can't be muated. We also can't declare empty const
+// variable
+
+const birthYear = 2001;
+// birthYear = 2002;
