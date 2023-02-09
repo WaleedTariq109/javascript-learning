@@ -185,5 +185,3 @@ while (count <= 10) {
   // console.log(count);
   count++;
 }
-
-// ? Advance Array Methods
