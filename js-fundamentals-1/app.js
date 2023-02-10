@@ -169,7 +169,7 @@ const personsDetails = {
   },
 };
 
-// Access Object Valuea by dot notation
+// Access Object Value by dot notation
 
 const name = personsDetails.name;
 const name1 = personsDetails["name"];
@@ -184,4 +184,67 @@ let count = 0;
 while (count <= 10) {
   // console.log(count);
   count++;
+}
+
+/**
+ * ? Functions
+ *
+ * 1: Function is simply a piece of code which we can reuse.
+ * 2: Function is just a value and we can also store it
+ *    in a variable.
+ *
+ */
+
+// ? Function Declaration
+
+function logger() {
+  console.log("Hello World");
+}
+
+// * Calling the logger function
+
+// logger();
+// logger();
+// logger();
+
+// ? Function with parameters and return value
+
+function fruitJuicer(personName, totalApples, totalOranges) {
+  const juice = `${personName} juics with ${totalApples} apples and ${totalOranges} oranges are ready for serving.`;
+  return juice;
+}
+
+/**
+ * fruitJuicer(2, 3); === `Your juics with 2 apples and 3 oranges are ready for serving.`
+ */
+
+// const msg1 = fruitJuicer("Waleed", 2, 3);
+// const msg2 = fruitJuicer("Junaid", 3, 1);
+// console.log(msg1);
+// console.log(msg2);
+
+// ? Arrow Function
+
+const calculateAge = (birthYear) => 2023 - birthYear;
+
+const age4 = calculateAge(2001);
+
+// console.log(age4);
+
+// ? Loops, Break and Continue
+
+const listOfAnything = ["waleed", "junaid", 9, "sugar", 90, "chilli"];
+
+console.log("----- Continue ------");
+for (let i = 0; i < listOfAnything.length; i++) {
+  // continue; keyword terminate the current itteration
+  if (typeof listOfAnything[i] !== "string") continue;
+  console.log(listOfAnything[i]);
+}
+
+console.log("------- Break --------");
+for (let i = 0; i < listOfAnything.length; i++) {
+  // continue; keyword terminate the current itteration
+  if (typeof listOfAnything[i] === "number") break;
+  console.log(listOfAnything[i]);
 }
